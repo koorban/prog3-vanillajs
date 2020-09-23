@@ -9,124 +9,108 @@
 </head>
 <body>
 
+    <div class='container'>
 
-    <div>
-        <form>
-            <div class="form-group">
-                <label for="">Number 1</label>
-                <input class="form-control"  id="numOne" type="number">
+        <div id="addition" style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
+            <h1 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Sum of Two Numbers</h1>
+            <div style="margin-left: 10em; margin-right: 10em;">
+                <form>
+                    <div class="form-group">
+                        <label for="">Number 1</label>
+                        <input class="form-control"  id="num-one" type="number">
+                    </div>
+                    <div class="form-group" >
+                        <label for="">Number 2</label>
+                        <input class="form-control" id="num-two" type="number">
+                    </div>
+                </form>
+                <div>
+                    <button class="btn btn-primary" onClick="showAdd()">Calculate</button>
+                </div>
+                <div style="margin-top: 2em;text-align: center;">
+                    <label for="">Result</label>
+                    <h5 id="result-sum"></h5>
+                </div>
             </div>
-            <div class="form-group" >
-                <label for="">Number 2</label>
-                <input class="form-control" id="numTwo" type="number">
-            </div>
-        </form>
+        </div>
 
-        <div>
-            <button class="btn btn-primary" onClick="showAdd()">Calculate</button>
+        <div id='calculate-age' style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
+            <h1 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Adult or Minor</h1>
+            <div style="margin-left: 15em; margin-right: 5em;">
+                <div class='row'>
+                    <form class='col'>
+                        <div class="form-group">
+                            <label for="">Enter Persons Age</label>
+                            <input class="form-control" id="persons-age" type="number">
+                        </div>
+                    </form>
+                    <div class='col' style="margin-top: 2em;">
+                        <button class="btn btn-primary" onClick="showAge()">Calculate</button>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 2em;text-align: center;">
+                <label for="">Resultado</label>
+                <h5 id="result-age"></h5>
+            </div>
         </div>
-        <div>
-            <label for="">Resultado</label>
-            <h5 id="resultAddition"></h5>
+
+        <div id='calculate-even' style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
+            <div id='table'>
+                <h1 style="text-align: center; margin-top: 5em; margin-bottom: 5em;">Enter A Number On Your Keyboard</h1>
+                <div style="margin-top: 2em;text-align: center;">
+                    <label for="">Resultado</label>
+                    <h5 id="resultEven"></h5>
+                </div>
+            </div>
         </div>
+
+        <div id='calculate-mayor' style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
+            <h1 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Find the Largest Number</h1>
+            <div style="margin-left: 10em; margin-right: 10em;">
+                <form>
+                    <div class="form-group">
+                        <label for="">Enter the First Number</label>
+                        <input class="form-control" id="number-one" type="number">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Enter the Second Number</label>
+                        <input class="form-control" id="number-two" type="number">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Enter the Third Number</label>
+                        <input class="form-control" id="number-three" type="number">
+                    </div>
+                </form>
+                <div>
+                    <button class="btn btn-primary" onClick="showMayor()">Calculate</button>
+                </div>
+                <div style="text-align: center;">
+                    <label for="">Resultado</label>
+                    <h5 id="result-mayor"></h5>
+                </div>
+            </div>
+        </div>
+    
+        <div id="factorial" style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
+            <h1 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Enter a Number. Find the Factorial</h1>
+            <div style="margin-left: 10em; margin-right: 10em;">
+                <form>
+                    <div class="form-group">
+                        <label for="">Number Factorial</label>
+                        <input class="form-control" id="number-factorial" type="number">
+                    </div>
+                </form>
+                <div>
+                    <button class="btn btn-primary" onClick="showFactorial()">Calculate</button>
+                </div>
+                <div style="text-align: center;">
+                    <label for="">Resultado</label>
+                    <h5 id="result-factorial"></h5>
+                </div>
+            </div> 
+        </div>
+    
     </div>
-
-    <div >
-        <form>
-            <div class="form-group">
-                <label for="">Number Factorial</label>
-                <input class="form-control" id="factorial" type="number">
-            </div>
-        </form>
-
-        <div>
-            <button class="btn btn-primary" onClick="showFactorial()">Calculate</button>
-        </div>
-        <div>
-            <label for="">Resultado</label>
-            <h5 id="resultFactorial"></h5>
-        </div>
-    </div>
-
-
-
-    <div>
-        <form>
-            <div class="form-group">
-                <label for="">Number 1</label>
-                <input class="form-control"  id="numOne" type="number">
-            </div>
-            <div class="form-group" >
-                <label for="">Number 2</label>
-                <input class="form-control" id="numTwo" type="number">
-            </div>
-        </form>
-
-        <div>
-            <button class="btn btn-primary" onClick="showAdd()">Calculate</button>
-        </div>
-        <div>
-            <label for="">Resultado</label>
-            <h5 id="resultAddition"></h5>
-        </div>
-    </div>
-
-    <div>
-        <form>
-            <div class="form-group">
-                <label for="">Age</label>
-                <input class="form-control" id="age" type="number">
-            </div>
-        </form>
-        <div>
-            <button class="btn btn-primary" onClick="showAge()">Calculate</button>
-        </div>
-        <div>
-            <label for="">Resultado</label>
-            <h5 id="resultAge"></h5>
-        </div>
-    </div>
-
-    <div>
-        <form>
-            <div class="form-group">
-                <label for="">Enter a Number</label>
-                <input class="form-control" id="numberPar" type="number">
-            </div>
-        </form>
-        <div>
-            <button class="btn btn-primary" onClick="showEven()">Calculate</button>
-        </div>
-        <div>
-            <label for="">Resultado</label>
-            <h5 id="resultEven"></h5>
-        </div>
-    </div>
-
-    <div>
-        <form>
-            <div class="form-group">
-                <label for="">Enter a Number</label>
-                <input class="form-control" id="numberOne" type="number">
-            </div>
-            <div class="form-group">
-                <label for="">Enter a Number</label>
-                <input class="form-control" id="numberTwo" type="number">
-            </div>
-            <div class="form-group">
-                <label for="">Enter a Number</label>
-                <input class="form-control" id="numberThree" type="number">
-            </div>
-        </form>
-        <div>
-            <button class="btn btn-primary" onClick="showMayor()">Calculate</button>
-        </div>
-        <div>
-            <label for="">Resultado</label>
-            <h5 id="resultMayor"></h5>
-        </div>
-    </div>
-
-
 </body>
 </html>
