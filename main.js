@@ -1,8 +1,6 @@
 function showAdd() {
     const num1 = document.getElementById('numOne').value;
-    console.log(typeof(num1));
     const num2 = document.getElementById('numTwo').value;
-    console.log(typeof(num2));
     const res = document.getElementById('resultAddition');
     res.innerHTML = sum(num1,num2);
 };
