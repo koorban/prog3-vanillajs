@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-
+    <h1 style="text-align: center; padding-top: 1em; margin-bottom: 1em;">Programming III Vanilla JS</h1>
     <div class='container'>
-
         <div id="addition" style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
-            <h1 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Sum of Two Numbers</h1>
+            <h2 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Sum of Two Numbers</h2>
             <div style="margin-left: 10em; margin-right: 10em;">
                 <form>
                     <div class="form-group">
@@ -35,7 +34,7 @@
         </div>
 
         <div id='calculate-age' style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
-            <h1 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Adult or Minor</h1>
+            <h2 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Adult or Minor</h2>
             <div style="margin-left: 15em; margin-right: 5em;">
                 <div class='row'>
                     <form class='col'>
@@ -55,18 +54,18 @@
             </div>
         </div>
 
-        <div id='calculate-even' style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
-            <div id='table'>
-                <h1 style="text-align: center; margin-top: 5em; margin-bottom: 5em;">Enter A Number On Your Keyboard</h1>
+        <div id='calculate-even' style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;"> 
+            <body id="number-value" Onkeyup="showEvenOdd(event)">
+                <h2 style="text-align: center; margin-top: 5em; margin-bottom: 5em;">Enter A Number On Your Keyboard</h2>
                 <div style="margin-top: 2em;text-align: center;">
                     <label for="">Resultado</label>
-                    <h5 id="resultEven"></h5>
+                    <h5 id="result-even-odd"></h5>
                 </div>
-            </div>
+            </body> 
         </div>
 
         <div id='calculate-mayor' style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
-            <h1 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Find the Largest Number</h1>
+            <h2 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Find the Largest Number</h2>
             <div style="margin-left: 10em; margin-right: 10em;">
                 <form>
                     <div class="form-group">
@@ -93,7 +92,7 @@
         </div>
     
         <div id="factorial" style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
-            <h1 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Enter a Number. Find the Factorial</h1>
+            <h2 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Enter a Number. Find the Factorial</h2>
             <div style="margin-left: 10em; margin-right: 10em;">
                 <form>
                     <div class="form-group">
@@ -108,6 +107,29 @@
                     <label for="">Resultado</label>
                     <h5 id="result-factorial"></h5>
                 </div>
+            </div> 
+        </div>
+
+        <div id="multip-table" style="border-style: solid; border-width: 1px; border-radius: 0.5em; border-color: black; margin-bottom: 5em;">
+            <h2 style="text-align: center; margin-top: 1em; margin-bottom: 1em;">Multiplication Table</h2>
+            <div style="margin-left: 10em; margin-right: 10em;">
+                <form>
+                    <div class="form-group">
+                        <label for="">Enter a Number</label>
+                        <input class="form-control" id="number-table" type="text" Onkeyup="showTable(event)" />
+                    </div>
+                </form>
+                <table class="table table-dark">
+                    <thead>
+                      <tr>
+                            <th scope="col">Number</th>
+                            <th scope="col">Operator</th>
+                            <th scope="col">Multiplier</th>
+                            <th scope="col">Product</th>
+                      </tr>
+                    </thead>
+                    <tbody id='table-body'></tbody>
+                </table>
             </div> 
         </div>
     

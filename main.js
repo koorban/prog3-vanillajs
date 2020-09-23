@@ -26,12 +26,36 @@ function showFactorial() {
     res.innerHTML = factorialize(num);
 };
 
-function showEven() {
-    const number = document.getElementById('numberPar').value;
-    const res = document.getElementById('resultEven');
-    res.innerHTML = isNumberEven(number)
+function showEvenOdd(event) {
+    if(event.key) {
+        let value = event.key;
+        const res = document.getElementById('result-even-odd');
+        res.innerHTML = isNumberEven(value)
+    }; 
 };
 
+function showTable(event) {
+    if(event.key) {
+        const number = document.getElementById('number-table').value;
+        const table = document.getElementById('table-body');
+        const tableProduct = calculateProduct(number);
+        table.innerHTML = tableProduct;
+    };
+
+    function calculateProduct(number) {
+        let res = ' ';
+        for(let i = 1; i <= 10; i+=1){
+            res+= `
+            <tr>
+                <td>${number}</td>
+                <td>*</td>
+                <td>${i}</td>
+                <td>${number*i}</td>
+            </tr>`;
+        };
+        return res;
+    };
+}
 
 function sum(num1, num2) {
     number1 = parseFloat(num1);
@@ -40,9 +64,7 @@ function sum(num1, num2) {
 };
 
 function calculateAge(age) {
-    console.log(age)
     let numberAge = parseInt(age)
-    console.log(numberAge)
     if (numberAge >= 18) {
         return "Person is an: Adult"
     } else {
